@@ -75,13 +75,18 @@ ul#menu li:hover {
 @media screen and (max-width : 860px){
 
 	ul#menu {
+		width: 90%;
 		position: static;
+		left: 0;
+		right: 0;
 		display: none;
 		padding: 0px;
+		margin: auto;
 	}
 
 	ul#menu li {
 		margin-bottom: 1px;
+
 	}
 
 	ul#menu li, ul#menu li a {
