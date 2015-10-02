@@ -47,12 +47,14 @@
 
             $("#show-menu").change(function() {
                 if(checked) {
-                    document.getElementsByClassName('headerContainer')[0].setAttribute("style", "height:150px");
-                    $('#menu').css("display", "none");
+                    $(".headerContainer").eq(0).css("height", "150px");
+                    $("#menu").css("display", "none");
+                    $(".menuContainer").css("border", "none");
                 }
                 else {
-                    document.getElementsByClassName('headerContainer')[0].setAttribute("style", "height:430px");
-                    $('#menu').css("display", "block");
+                    $(".headerContainer").eq(0).css("height", "430px");
+                    $("#menu").css("display", "block");
+                    $(".menuContainer").css("border", "1px solid #19C589");
                 }
 
                 checked = !checked;
@@ -63,6 +65,7 @@
                     checked = false;
                     $("#menu").css("display", "block");
                     $(".headerContainer").eq(0).css("height", "150px");
+                    $(".menuContainer").css("border", "none");
                 }
                 else if(!checked) {
                     $("#menu").css("display", "none");

@@ -22,6 +22,7 @@
 	width: 60%;
 	position: absolute;
 	right: 15%;
+	margin: 40px 0px;
 }
 
 ul#menu {
@@ -29,7 +30,7 @@ ul#menu {
 	right: 0;
     list-style: none;
     margin: 0;
-    padding: 40px 0px;
+    padding: 0;
     overflow: hidden;
     color: white;
 }
@@ -38,10 +39,10 @@ ul#menu {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	color: #fff;
-	background: #19c589;
+	background: #19C589;
 	text-align: center;
 	padding: 20px 0px;
-	margin: 40px 0px 0px 0px;
+	margin: 0px;
 	display: none;
 }
 
@@ -75,17 +76,21 @@ ul#menu li:hover {
 @media screen and (max-width : 860px){
 
 	ul#menu {
-		width: 90%;
-		position: static;
-		left: 0;
-		right: 0;
+		width: 100%;
+		position: relative;
+		left: 5%;
 		display: none;
 		padding: 0px;
 		margin: auto;
+		text-align: center;
 	}
 
 	ul#menu li {
-		margin-bottom: 1px;
+		float: left;
+		position: relative;
+		margin: auto;
+		text-align: center;
+		padding: 20px 0px;
 
 	}
 
