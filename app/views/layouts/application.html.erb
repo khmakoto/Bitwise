@@ -10,7 +10,7 @@
 
 <!-- The container for the Main Menu and Magazine Logo is created. -->
 <div class="headerContainer">
-    <img src="Bitwise Logo.png" id="logo" />
+    <%= image_tag("Bitwise Logo", :id => "logo") %>
 
     <div class="menuContainer">
         <label for="show-menu" class="show-menu">Menu</label>
@@ -29,10 +29,10 @@
 <!-- The container for the Sign In and Search Bar is created. -->
 <div class="headerTwoContainer">
     <div class="signInContainer">
-        <img src="Sign in.png" id="signInImage" />
+    	<%= image_tag("Sign in", :id => "signInImage") %>
         <a href="Menu.html" id="signIn">Sign in</a>
     </div>
-    <img src="Search Button.png" id="searchButton" />
+    <%= image_tag("Search Button", :id => "searchButton") %>
     <input type="text" placeholder="Search" id="searchBar" />
 </div>
 
