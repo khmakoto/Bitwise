@@ -79,6 +79,11 @@ ul#menu li:hover {
     border-radius: 10px;
 }
 
+ul#menu > a {
+    color: white;
+    text-decoration: none;
+}
+
 .menuSelected {
 	border-radius: 10px;
 	background-color: #37424C;
