@@ -21,10 +21,10 @@
                 <%=  link_to(root_path) do %>
                     <li class="menuSelected">Home</li>
                 <% end %>
-                <li>Tech news</li>
-                <li>Gadgets</li>
-                <li>Gaming</li>
-                <li>Reviews</li>
+                <li><%= link_to "Tech news", publications_path(:type => "article", :section => "tech") %></li>
+                <li><%= link_to "Gadgets", publications_path(:type => "article", :section => "gadget") %></li>
+                <li><%= link_to "Gaming", publications_path(:type => "article", :section => "gaming") %></li>
+                <li><%= link_to "Reviews", publications_path(:type => "review", :section => "-") %></li>
             </ul>
         </div>
     </div>

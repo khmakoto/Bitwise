@@ -1,0 +1,21 @@
+<% @page_title = "Publication | Create" %>
+<div class="Sign_Form">
+  <h1>Publication</h1>
+  <%= form_for(:publication, :url => {:controller => 'publications', :action => 'create'}) do |f| %>
+    <p> Title:</br> <%= f.text_field :title%> </p>
+    <p> Type:</br> <%= f.text_field :type%> </p>
+    <p> Section:</br> <%= f.text_field :section%> </p>
+    <p> Intro:</br> <%= f.text_area :intro%> </p>
+    <p> Content:</br> <%= f.text_area :content%> </p>
+    <p> Summary:</br> <%= f.text_area :summary%> </p>
+    <p> Grade:</br> <%= f.number_field :grade%> </p>
+    <%= f.submit :Signup %>
+  <% end %>
+  <% if @publication.errors.any? %>
+    <ul class="Signup_Errors">
+    <% for message_error in @publication.errors.full_messages %>
+      <li>* <%= message_error %></li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
