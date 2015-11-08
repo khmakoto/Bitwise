@@ -1,0 +1,47 @@
+.accountInformationCheckbox > input[type="checkbox"] {
+	visibility: visible;
+	display: inline;
+}
+
+.accountInformationCheckbox {
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+.signInForm {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 10px;
+}
+
+.signUpForm {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 0px;
+}
+
+.signField {
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+.signField > input {
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.signButton {
+	font-size: 18px;
+}
+
+.signButton:hover {
+	cursor: pointer;
+}
+
+#signUpMessage {
+	font-style: italic;
+	padding: 10px 0px;
+	font-size: 14px;
+}
