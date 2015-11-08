@@ -61,15 +61,14 @@
         <input type="text" placeholder="Search" id="searchBar" />
     </div>
     <% if flash[:success] -%>
-        <% if flash[:color] -%>
-            <div class="flashError">
-                <p><%= flash[:success] %></p>
-            </div>
-        <% else %>
-            <div class="flashSuccess">
-                <p><%= flash[:success] %></p>
-            </div>
-        <% end %>
+        <div class="flashSuccess">
+            <p><%= flash[:success] %></p>
+        </div>
+    <% end %>
+    <% if flash[:error] -%>
+        <div class="flashError">
+            <p><%= flash[:error] %></p>
+        </div>
     <% end %>
 
     <div class="content">
