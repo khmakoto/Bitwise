@@ -38,6 +38,10 @@
                     <%= @current_user.username %>
                     <span class="arrow">&#9660;</span>
                 </p>
+                <%if @current_user.editor?%>
+                    <%= link_to "Create Article", new_publication_path(:type => "article") %>
+                    <%= link_to "Create Review", new_publication_path(:type => "review") %>
+                <%end%>
                 <ul id="accountSubmenu">
                     <li><%= link_to "My account", edit_user_path(@current_user) %></li>
                     <li>Reading list</li>

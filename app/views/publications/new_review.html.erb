@@ -1,14 +1,14 @@
 <% @page_title = "Publication | Create" %>
 <div class="Sign_Form">
-  <h1>Publication</h1>
+  <h1>Review</h1>
   <%= form_for(:publication, :url => {:controller => 'publications', :action => 'create'}) do |f| %>
     <p> Title:</br> <%= f.text_field :title%> </p>
-    <%f.hidden_field :type, :value => @type%>
+    <%=f.hidden_field :type, :value => @type%>
     <p> Section:</br> <%= f.text_field :section%> </p>
     <p> Intro:</br> <%= f.text_area :intro%> </p>
     <p> Content:</br> <%= f.text_area :content%> </p>
     <p> Summary:</br> <%= f.text_area :summary%> </p>
-    <p> Grade:</br> <%= f.number_field :grade%> </p>
+    <p> Grade:</br> <%= f.number_field :grade, :max => 10, :step => 0.1%> </p>
     <%= f.submit :Signup %>
   <% end %>
   <% if @publication.errors.any? %>
