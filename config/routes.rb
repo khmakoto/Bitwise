@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'sessions#home'
 
   resources :users
+  resources :publications
   get "login" => "sessions#login", :as => "login"
   get "logout" => "sessions#logout", :as => "logout"
   post "attempt" => "sessions#login_attempt"

@@ -5,3 +5,21 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+User.create({
+  username: 'Ricky',
+  email: 'rik@rik.com',
+  editor: true,
+  password: 'password',
+  password_confirmation: 'password'
+})
+
+User.create({
+  username: 'User',
+  email: 'use@use.com',
+  password: 'password',
+  password_confirmation: 'password'
+})
+
+puts "Seeding complete"
+

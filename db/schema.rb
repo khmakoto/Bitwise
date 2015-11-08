@@ -11,7 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108085952) do
+ActiveRecord::Schema.define(version: 20151108120508) do
+
+  create_table "comments", force: :cascade do |t|
+    t.text     "text"
+    t.integer  "user_id"
+    t.integer  "publication_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "comments", ["publication_id"], name: "index_comments_on_publication_id"
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
+
+  create_table "publications", force: :cascade do |t|
+    t.string   "type"
+    t.string   "section"
+    t.string   "title"
+    t.text     "intro"
+    t.text     "content"
+    t.text     "summary"
+    t.decimal  "grade"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "publications", ["user_id"], name: "index_publications_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
@@ -23,6 +49,7 @@ ActiveRecord::Schema.define(version: 20151108085952) do
     t.boolean  "tech_preference",    default: true
     t.boolean  "gadget_preference",  default: true
     t.boolean  "gaming_preference",  default: true
+    t.boolean  "editor"
   end
 
 end
