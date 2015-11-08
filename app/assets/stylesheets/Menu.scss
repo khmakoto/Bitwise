@@ -163,3 +163,22 @@ ul#menu li:hover {
 	color: #9FA7AE;
 	font-size: 16px;
 }
+
+.footerContainer {
+	width: 110%;
+	height: 50px;
+	padding: 0;
+	margin-left: -1%;
+	margin-top: -1%;
+	background-color: #242B32;
+	position: relative;
+}
+
+.footer {
+	width: 100%;
+	text-align: center;
+}
+
+table#footer th {
+	width: 33%;
+}

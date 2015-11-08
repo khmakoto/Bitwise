@@ -2024,3 +2024,453 @@ Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5
 
 
 Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-07 23:31:47 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 249ms (Views: 235.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-ae81ec9b8e82497b2629eff41404a956ff1364594d35d5d75679e1c107865c17.css?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:31 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-07 23:53:32 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-07 23:53:32 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-07 23:53:32 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-07 23:53:55 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 234ms (Views: 233.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-3a6e3eccd88a0287aab384d9a98b51a889f0a0c2496b73086cef07f4e4755a96.css?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-07 23:53:56 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 134ms (Views: 133.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-ffd477d95a2cf2c3f6ee358bd994740c0c053c7ad5d1b07b632c1044cad39b1a.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-07 23:54:33 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 127ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-be5f4dabc3e14c848617a591564da419e255b5e9d1bb9c4af56f0ab8f238b1c6.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-07 23:54:42 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-ffd477d95a2cf2c3f6ee358bd994740c0c053c7ad5d1b07b632c1044cad39b1a.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-07 23:54:53 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-07 23:55:03 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-be5f4dabc3e14c848617a591564da419e255b5e9d1bb9c4af56f0ab8f238b1c6.css?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-07 23:55:04 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 148ms (Views: 146.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-668e274a9f0f05e02ea2498103e72d36c724369c4f4cbee5749f5d44b9fbf6fb.css?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-08 00:00:57 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-08 00:00:58 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-08 00:00:58 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-08 00:00:58 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 148ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-ec0111bf062ca0f68030bd071af29aaefe75d3d66d14f5bd57272fb0e8a5d557.css?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-08 00:01:16 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 141ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-b0d64a1de19135dd93caf402c81c6df9feec4117847a3f2dcfaae2ea8709bc70.css?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:18 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-08 00:03:19 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-08 00:03:19 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-08 00:03:19 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 146ms (Views: 144.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Menu.self-825de447d0ae7064fe87a0e23c7635921257db718bd82b2b626abc2ebdf9808a.css?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/Style.self-b503f772e4346adaec19f1a6b8cb0d5605200f8df33f193c75c4a913e7aae33d.css?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/Menu.self-dbab612d2a6482724d22eb68c3b3391449cb151894a122f46b0f77ab4caa0d30.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/Bitwise%20Logo-f04d4a3177806fa52ed28d22715d6c9393649a34b47bddbc56d31625d56d6acc.png" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/Sign%20in-f9edb898d51558a2cac0401ec10e89b7e39f9db8412f9ee6b277a67ccd0e7fdd.png" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
+
+
+Started GET "/assets/Search%20Button-3889779bf60da7b20575a478996c32caeddbceb9af5a76fdd940a93e4993d0c3.png" for 127.0.0.1 at 2015-11-08 00:03:59 +0000
