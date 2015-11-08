@@ -13,18 +13,22 @@
       </ul>
     </div>
   <% end %>
-    <p> Name:</br> <%= f.text_field :username%> </p>
-    <p> Email:</br> <%= f.text_field :email%> </p>
-    <p> Password:</br> <%= f.password_field :password%></p>
-    <p> Password Confirmation:</br> <%= f.password_field :password_confirmation%></p>
-    <div class="accountInformationCheckbox">
-      <%= f.check_box :tech_preference %> Tech News<br />
-      <%= f.check_box :gadget_preference %> Gadgets<br />
-      <%= f.check_box :gaming_preference %> Gaming<br />
-    </div>
- 
-  <p>
-    <%= f.submit%>
-  </p>
- 
+    <div class="signUpForm">
+      <h1>Edit your information</h1>
+      <p class="signField"> Name:</br> <%= f.text_field :username%> </p>
+      <p class="signField"> Email:</br> <%= f.text_field :email%> </p>
+      <p class="signField"> Password:</br> <%= f.password_field :password%></p>
+      <p class="signField"> Password Confirmation:</br> <%= f.password_field :password_confirmation%></p>
+      <p class="signField">
+        Personal preferences:<br/>
+        <div class="accountInformationCheckbox">
+          <%= f.check_box :tech_preference %> Tech News<br />
+          <%= f.check_box :gadget_preference %> Gadgets<br />
+          <%= f.check_box :gaming_preference %> Gaming<br />
+        </div>
+      </p>
+      <p>
+        <p class="signField"><%= submit_tag("Update information", :class => "signButton") %></p>
+      </p>
+    </div
 <% end %>
