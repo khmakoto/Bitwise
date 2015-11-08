@@ -1,7 +1,7 @@
 class CreatePublications < ActiveRecord::Migration
   def change
     create_table :publications do |t|
-      t.string :type
+      t.string :publication_type
       t.string :section
       t.string :title
       t.text :intro

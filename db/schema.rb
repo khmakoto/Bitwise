@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20151108120508) do
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
   create_table "publications", force: :cascade do |t|
-    t.string   "type"
+    t.string   "publication_type"
     t.string   "section"
     t.string   "title"
     t.text     "intro"
@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 20151108120508) do
     t.text     "summary"
     t.decimal  "grade"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   add_index "publications", ["user_id"], name: "index_publications_on_user_id"

@@ -3,7 +3,7 @@
   <h1>Review</h1>
   <%= form_for(:publication, :url => {:controller => 'publications', :action => 'create'}) do |f| %>
     <p> Title:</br> <%= f.text_field :title%> </p>
-    <%=f.hidden_field :type, :value => @type%>
+    <%=f.hidden_field :publication_type, :value => @type%>
     <p> Section:</br> <%= f.text_field :section%> </p>
     <p> Intro:</br> <%= f.text_area :intro%> </p>
     <p> Content:</br> <%= f.text_area :content%> </p>
