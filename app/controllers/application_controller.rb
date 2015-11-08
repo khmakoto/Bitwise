@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
         return true 
       else
         @current_user = nil
-        
         return false
       end
     end

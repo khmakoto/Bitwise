@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   validates :password, :confirmation => true #password_confirmation attr
   validates_length_of :password, :in => 6..20, :on => :create
 
+
   def encrypt_password
     if password.present?
       self.salt = BCrypt::Engine.generate_salt
@@ -31,7 +32,7 @@ class User < ActiveRecord::Base
       return false
     end
   end   
-  
+
   def match_password(login_password="")
     encrypted_password == BCrypt::Engine.hash_secret(login_password, salt)
   end
