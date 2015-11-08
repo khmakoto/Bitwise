@@ -35,9 +35,11 @@
             <%if @current_user%>
                 <%= link_to image_tag("Sign in", :id => "signInImage"), logout_url %>
                 <p class="signInOut"><%= link_to "Sign out", logout_url %></p>
+                <p class="signInOut"><%= @current_user.username %></p>
             <% else %>
                 <%= link_to image_tag("Sign in", :id => "signInImage"), login_url %>
-                <p class="signInOut"><%= link_to "Sign in", login_url %></p>       
+                <p class="signInOut"><%= link_to "Sign in", login_url %></p>
+                <span class="signInOut"><%= link_to "New", new_user_path %></span>
             <% end %>
         </div>
         <%= image_tag("Search Button", :id => "searchButton") %>
