@@ -34,8 +34,10 @@
         <div class="signInContainer">
             <%if @current_user%>
                 <%= link_to image_tag("Sign in", :id => "signInImage"), logout_url %>
+                <%= link_to "Sign out", logout_url %>
             <% else %>
-                <%= link_to image_tag("Sign in", :id => "signInImage"), login_url %>          
+                <%= link_to image_tag("Sign in", :id => "signInImage"), login_url %>
+                <%= link_to "Sign in", logout_url %>          
             <% end %>
         </div>
         <%= image_tag("Search Button", :id => "searchButton") %>
