@@ -39,11 +39,10 @@
                     <span class="arrow">&#9660;</span>
                 </p>
                 <ul id="accountSubmenu">
-                    <li>My account</li>
+                    <li><%= link_to "My account", edit_user_path(@current_user) %></li>
                     <li>Reading list</li>
                     <li><%= link_to "Sign out", logout_url %></li>
-                </ul>
-                <span class="signInOut"><%= link_to "Edit", edit_user_path(@current_user) %></span>           
+                </ul>        
             <% else %>
                 <%= link_to image_tag("Sign in", :id => "signInImage"), login_url %>
                 <p class="signInOut"><%= link_to "Sign in", login_url %></p>

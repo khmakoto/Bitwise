@@ -167,6 +167,7 @@ ul#menu > a {
 	color: #9FA7AE;
 	display: inline;
 	padding: 15px 5px;
+	margin-left: 40px;
 	border-radius: 10px;
 }
 
@@ -204,7 +205,7 @@ ul#menu > a {
 #accountSubmenu li {
 	text-align: center;
 	display: block;
-	font-size: 16;
+	font-size: 14px;
 	padding: 10px 5px;
 	border-radius: 10px;
 	color: white;
@@ -220,6 +221,7 @@ ul#menu > a {
 	background-color: #999;
 	cursor: pointer;
 	color: white;
+	font-weight: bold;
 }
 
 #searchButton {
