@@ -8,50 +8,56 @@
 </head>
 <body>
 
-<!-- The container for the Main Menu and Magazine Logo is created. -->
-<div class="headerContainer">
-    <%= image_tag("Bitwise Logo", :id => "logo") %>
+<div id="wrapper">
+    <!-- The container for the Main Menu and Magazine Logo is created. -->
+    <div class="headerContainer">
+        <%= image_tag("Bitwise Logo", :id => "logo") %>
 
-    <div class="menuContainer">
-        <label for="show-menu" class="show-menu">Menu</label>
-        <input type="checkbox" id="show-menu" role="button">
+        <div class="menuContainer">
+            <label for="show-menu" class="show-menu">Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
 
-        <ul id="menu">
-            <li class="menuSelected">Home</li>
-            <li>Tech news</li>
-            <li>Gadgets</li>
-            <li>Gaming</li>
-            <li>Reviews</li>
-        </ul>
+            <ul id="menu">
+                <li class="menuSelected">Home</li>
+                <li>Tech news</li>
+                <li>Gadgets</li>
+                <li>Gaming</li>
+                <li>Reviews</li>
+            </ul>
+        </div>
     </div>
-</div>
 
-<!-- The container for the Sign In and Search Bar is created. -->
-<div class="headerTwoContainer">
-    <div class="signInContainer">
-    	<%= image_tag("Sign in", :id => "signInImage") %>
-        <a href="Menu.html" id="signIn">Sign in</a>
+    <!-- The container for the Sign In and Search Bar is created. -->
+    <div class="headerTwoContainer">
+        <div class="signInContainer">
+        	<%= image_tag("Sign in", :id => "signInImage") %>
+            <a href="Menu.html" id="signIn">Sign in</a>
+        </div>
+        <%= image_tag("Search Button", :id => "searchButton") %>
+        <input type="text" placeholder="Search" id="searchBar" />
     </div>
-    <%= image_tag("Search Button", :id => "searchButton") %>
-    <input type="text" placeholder="Search" id="searchBar" />
-</div>
 
-<%= yield %>
+    <div class="content">
+        <%= yield %>
+    </div>
 
-<div class="footerContainer">
-    <table id="footer">
-        <tr>
-            <th>
-                Contact us
-            </th>
-            <th>
-                About us
-            </th>
-            <th>
-                Privacy policy
-            </th>
-        </tr>
-    </table>
+    <div class="footerSeparator">
+
+    <div class="footerContainer">
+        <table id="footer">
+            <tr>
+                <th>
+                    Contact us
+                </th>
+                <th>
+                    About us
+                </th>
+                <th>
+                    Privacy policy
+                </th>
+            </tr>
+        </table>
+    </div>
 </div>
 
 </body>
