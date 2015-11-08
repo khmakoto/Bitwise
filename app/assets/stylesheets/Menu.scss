@@ -179,6 +179,12 @@ ul#menu li:hover {
 	text-align: center;
 }
 
-table#footer th {
+#footer {
+	width: 90%;
+}
+
+#footer th {
+	padding-top: 10px;
 	width: 33%;
+	color: white;
 }
