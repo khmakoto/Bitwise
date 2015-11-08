@@ -16,6 +16,17 @@ $(document).on("page:load", function(){
         checked = !checked;
     });
 
+    $("#accountMenu").hover(function() {
+        $("#accountSubmenu").css("visibility", "visible");
+    },
+    function() {
+        $("#accountSubmenu").hover(function() {
+        },
+        function() {
+            $("#accountSubmenu").css("visibility", "hidden");
+        });
+    });
+
     $(window).resize(function(){
         if(parseInt($(window).width()) > 860) {
             checked = false;
@@ -57,5 +68,16 @@ $(document).ready(function(){
         else if(!checked) {
             $("#menu").css("display", "none");
         }
+    });
+
+    $("#accountMenu").hover(function() {
+        $("#accountSubmenu").css("visibility", "visible");
+    },
+    function() {
+        $("#accountSubmenu").hover(function() {
+        },
+        function() {
+            $("#accountSubmenu").css("visibility", "hidden");
+        });
     });
 });
