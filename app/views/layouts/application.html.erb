@@ -29,8 +29,8 @@
 <!-- The container for the Sign In and Search Bar is created. -->
 <div class="headerTwoContainer">
     <div class="signInContainer">
-    	<%= image_tag("Sign in", :id => "signInImage") %>
-        <a href="Menu.html" id="signIn">Sign in</a>
+    	<%= link_to image_tag("Sign in", :id => "signInImage"), login_url %>
+        
     </div>
     <%= image_tag("Search Button", :id => "searchButton") %>
     <input type="text" placeholder="Search" id="searchBar" />
