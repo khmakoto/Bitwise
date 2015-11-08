@@ -64,7 +64,16 @@
         <%= image_tag("Search Button", :id => "searchButton") %>
         <input type="text" placeholder="Search" id="searchBar" />
     </div>
-    <%= flash[:success] %>
+    <% if flash[:success] -%>
+        <div class="flashSuccess">
+            <p><%= flash[:success] %></p>
+        </div>
+    <% end %>
+    <% if flash[:error] -%>
+        <div class="flashError">
+            <p><%= flash[:error] %></p>
+        </div>
+    <% end %>
 
     <div class="content">
         <%= yield %>

@@ -12,15 +12,14 @@ class SessionsController < ApplicationController
       flash[:success] = "Welcome again, you logged in as #{authorized_user.username}"
       redirect_to root_path
     else
-      flash[:success] = "Invalid Username or Password"
-      flash[:color]= "invalid"
+      flash[:error] = "Invalid Username or Password"
       render "login"  
     end
   end
 
   def logout
     session[:user_id] = nil
-    flash[:success] = "logged out"
+    flash[:success] = "Logged out"
     redirect_to root_path
   end
   
