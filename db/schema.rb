@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108000919) do
+ActiveRecord::Schema.define(version: 20151108085952) do
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 20151108000919) do
     t.string   "salt"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "tech_preference",    default: true
+    t.boolean  "gadget_preference",  default: true
+    t.boolean  "gaming_preference",  default: true
   end
 
 end

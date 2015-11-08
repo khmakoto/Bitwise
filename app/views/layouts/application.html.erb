@@ -43,10 +43,11 @@
                     <li>Reading list</li>
                     <li><%= link_to "Sign out", logout_url %></li>
                 </ul>
+                <span class="signInOut"><%= link_to "Edit", edit_user_path(@current_user) %></span>           
             <% else %>
                 <%= link_to image_tag("Sign in", :id => "signInImage"), login_url %>
                 <p class="signInOut"><%= link_to "Sign in", login_url %></p>
-                <span class="signInOut"><%= link_to "New", new_user_path %></span>
+                <span class="signInOut"><%= link_to "New", new_user_path%></span>       
             <% end %>
         </div>
         <%= image_tag("Search Button", :id => "searchButton") %>
