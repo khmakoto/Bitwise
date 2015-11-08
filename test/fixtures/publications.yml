@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  section: MyString
+  title: MyString
+  intro: MyText
+  content: MyText
+  summary: MyText
+  grade: 9.99
+  user_id: 
+
+two:
+  type: 
+  section: MyString
+  title: MyString
+  intro: MyText
+  content: MyText
+  summary: MyText
+  grade: 9.99
+  user_id: 
