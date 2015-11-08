@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on("page:load", function(){
     var checked = false;
 
     $("#show-menu").change(function() {

@@ -54,9 +54,12 @@ $(document).ready(function(){
 		}
     });
 
-    $("#slide0").prop("checked", false);
-	$("#slide3").prop("checked", true);
+    $("#slide0").prop("checked", true);
 	$("#slideTitle0").css("visibility", "visible");
 
-    moveSlider();
+});
+
+$(document).on("page:load", function(){
+	$("#slide0").prop("checked", true);
+	$("#slideTitle0").css("visibility", "visible");
 });
