@@ -32,12 +32,16 @@
 <!-- The container for the Sign In and Search Bar is created. -->
     <div class="headerTwoContainer">
         <div class="signInContainer">
-        	<%= link_to image_tag("Sign in", :id => "signInImage"), login_url %>
+            <%if @current_user%>
+                <%= link_to image_tag("Sign in", :id => "signInImage"), logout_url %>
+            <% else %>
+                <%= link_to image_tag("Sign in", :id => "signInImage"), login_url %>          
+            <% end %>
         </div>
         <%= image_tag("Search Button", :id => "searchButton") %>
         <input type="text" placeholder="Search" id="searchBar" />
     </div>
-    <%= flash[:notice] %>
+    <%= flash[:success] %>
 
     <div class="content">
         <%= yield %>
