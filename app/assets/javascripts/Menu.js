@@ -20,11 +20,14 @@ $(document).on("page:load", function(){
         $("#accountSubmenu").css("visibility", "visible");
     },
     function() {
-        $("#accountSubmenu").hover(function() {
-        },
-        function() {
-            $("#accountSubmenu").css("visibility", "hidden");
-        });
+        $("#accountSubmenu").css("visibility", "hidden");
+    });
+
+    $("#accountSubmenu").hover(function() {
+        $("#accountSubmenu").css("visibility", "visible");
+    },
+    function() {
+        $("#accountSubmenu").css("visibility", "hidden");
     });
 
     $(window).resize(function(){
@@ -74,10 +77,13 @@ $(document).ready(function(){
         $("#accountSubmenu").css("visibility", "visible");
     },
     function() {
-        $("#accountSubmenu").hover(function() {
-        },
-        function() {
-            $("#accountSubmenu").css("visibility", "hidden");
-        });
+        $("#accountSubmenu").css("visibility", "hidden");
+    });
+
+    $("#accountSubmenu").hover(function() {
+        $("#accountSubmenu").css("visibility", "visible");
+    },
+    function() {
+        $("#accountSubmenu").css("visibility", "hidden");
     });
 });
