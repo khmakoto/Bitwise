@@ -1,6 +1,6 @@
 #sliderContainer {
     height: 500px;
-    width: 60%;
+    width: 100%;
 }
 
 .slider {
@@ -157,16 +157,16 @@
 }
 
 #mainMenuArticleSection {
-    margin: 20px 0px 20px 3%;
+    margin: 20px 0px 20px 5%;
     overflow: hidden;
-    width: 54%;
+    width: 90%;
 }
 
 #mainMenuArticleContainer1 {
     text-align: center;
     width: 48%;
     float: left;
-    border: 4px solid #7B7D7C;
+    border: 3px solid #BFC2C0;
     border-right: 2px dashed #7B7D7C;
 }
 
@@ -174,11 +174,129 @@
     text-align: center;
     width: 48%;
     float: left;
-    border: 4px solid #7B7D7C;
+    border: 3px solid #BFC2C0;
     border-left: 0px dashed #7B7D7C;
 }
 
 .mainMenuArticleContainer > table {
     width: 100%;
     text-align: center;
+    background-color: #727477;
+}
+
+.mainMenuArticleTable td, th {
+    padding: 10px 0px;
+}
+
+.mainMenuArticleTable th {
+    padding: 15px 0px;
+    background-color: #37424C;
+    font-size: 22px;
+    color: #9FA7AE;
+}
+
+.mainMenuArticleTable tr {
+    font-size: 20px;
+    background-color: #727477;
+}
+
+.articleImage {
+    height: 80px;
+    width: 80px;
+    margin: auto;
+}
+
+.mainMenuArticleTable td > p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    display: inline;
+    margin-top: -40px;
+}
+
+.articleSectionImageCell {
+    width: 40%;
+}
+
+.articleSectionTitleCell {
+    width: 60%;
+    text-align: left;
+}
+
+#leftHomePage {
+    float: left;
+    min-height: 100px;
+    height: auto;
+    width: 60%;
+}
+
+#mainMenuTopReviews {
+    float: right;
+    min-height: 100px;
+    height: auto;
+    width: 40%;
+    margin: 20px 0px;
+}
+
+#mainMenuTopReviews > div {
+    margin: auto;
+    width: 70%;
+}
+
+#mainMenuTableTopReviews {
+    width: 100%;
+    text-align: center;
+    background-color: #37424C;
+    border-top: 3px solid #727477;
+    border-left: 3px solid #727477;
+    border-right: 3px solid #727477;
+}
+
+.mainMenuTableTopReviews {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    background-color: #727477;
+}
+
+#topOneReviewImage {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+#mainMenuTableTopReviews th {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0px;
+    background-color: #37424C;
+    color: #9FA7AE;
+}
+
+.mainMenuTableTopReviews td {
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.mainMenuTableTopReviews th#topRatingsTitle {
+    font-size: 30px;
+}
+
+.topReviewImage {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+.topReviewImageContainer {
+    width: 40%;
+}
+
+.topReviewTitle {
+    text-align: left;
+    width: 40%;
+}
+
+.topReviewRating {
+    width: 20%;
 }

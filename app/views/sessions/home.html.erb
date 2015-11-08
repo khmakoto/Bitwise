@@ -1,46 +1,273 @@
-<div id="sliderContainer">
-  <ul class="slider">
-    <li>
-      <input type="radio" id="slide0" name="slide" checked />
-      <label for="slide0"></label>
-      <div class="slideTitle" id="slideTitle0"><p>Halo 5</p></div>
-      <%= image_tag("Halo5") %>
-    </li>
-    <li>
-      <input type="radio" id="slide1" name="slide" />
-      <label for="slide1"></label>
-      <div class="slideTitle" id="slideTitle1"><p>Metal Gear Solid V</p></div>
-      <%= image_tag("MGSV") %>
-    </li>
-    <li>
-      <input type="radio" id="slide2" name="slide" />
-      <label for="slide2"></label>
-      <div class="slideTitle" id="slideTitle2"><p>Star Wars Battlefront</p></div>
-      <%= image_tag("SWBattlefront") %>
-    </li>
-    <li>
-      <input type="radio" id="slide3" name="slide" />
-      <label for="slide3"></label>
-      <div class="slideTitle" id="slideTitle3"><p>Fallout 4</p></div>
-      <%= image_tag("Fallout4") %>
-    </li>
-  </ul>
+<div id="leftHomePage">
+  <div id="sliderContainer">
+    <ul class="slider">
+      <li>
+        <input type="radio" id="slide0" name="slide" checked />
+        <label for="slide0"></label>
+        <div class="slideTitle" id="slideTitle0">
+          <p>Halo 5</p>
+        </div>
+        <%= image_tag("Halo5") %>
+      </li>
+      <li>
+        <input type="radio" id="slide1" name="slide" />
+        <label for="slide1"></label>
+        <div class="slideTitle" id="slideTitle1">
+          <p>Metal Gear Solid V</p>
+        </div>
+        <%= image_tag("MGSV") %>
+      </li>
+      <li>
+        <input type="radio" id="slide2" name="slide" />
+        <label for="slide2"></label>
+        <div class="slideTitle" id="slideTitle2">
+          <p>Star Wars Battlefront</p>
+        </div>
+        <%= image_tag("SWBattlefront") %>
+      </li>
+      <li>
+        <input type="radio" id="slide3" name="slide" />
+        <label for="slide3"></label>
+        <div class="slideTitle" id="slideTitle3">
+          <p>Fallout 4</p>
+        </div>
+        <%= image_tag("Fallout4") %>
+      </li>
+    </ul>
+  </div>
+
+  <div id="mainMenuArticleSection">
+    <div id="mainMenuArticleContainer1" class="mainMenuArticleContainer">
+      <table class="mainMenuArticleTable">
+        <tr>
+          <th colspan="2">Latest stories</th>
+        </tr>
+        <tr>
+          <td class="articleSectionImageCell">
+            <%= image_tag("Halo5", :class => "articleImage") %>
+          </td>
+          <td class="articleSectionTitleCell">
+            <p>Halo 5</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="articleSectionImageCell">
+            <%= image_tag("MGSV", :class => "articleImage") %>
+          </td>
+          <td class="articleSectionTitleCell">
+            <p>Metal Gear Solid V</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="articleSectionImageCell">
+            <%= image_tag("SWBattlefront", :class => "articleImage") %>
+          </td>
+          <td class="articleSectionTitleCell">
+            <p>Star Wars Battlefront</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="articleSectionImageCell">
+            <%= image_tag("Fallout4", :class => "articleImage") %>
+          </td>
+          <td class="articleSectionTitleCell">
+            <p>Fallout 4</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="mainMenuArticleContainer2" class="mainMenuArticleContainer">
+      <table class="mainMenuArticleTable">
+        <tr>
+          <th colspan="2">Featured for you</th>
+        </tr>
+        <% if @current_user %>
+          <tr>
+            <td class="articleSectionImageCell">
+              <%= image_tag("Halo5", :class => "articleImage") %>
+            </td>
+            <td class="articleSectionTitleCell">
+              <p>Halo 5</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="articleSectionImageCell">
+              <%= image_tag("MGSV", :class => "articleImage") %>
+            </td>
+            <td class="articleSectionTitleCell">
+              <p>Metal Gear Solid V</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="articleSectionImageCell">
+              <%= image_tag("SWBattlefront", :class => "articleImage") %>
+            </td>
+            <td class="articleSectionTitleCell">
+              <p>Star Wars Battlefront</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="articleSectionImageCell">
+              <%= image_tag("Fallout4", :class => "articleImage") %>
+            </td>
+            <td class="articleSectionTitleCell">
+              <p>Fallout 4</p>
+            </td>
+          </tr>
+        <% else %>
+          <tr>
+            <td height="62px"></td>
+            <td rowspan="5">
+              <p>
+                <i>
+                  Sign in to see content according to your preferences.
+                </i>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td height="65px"></td>
+          </tr>
+          <tr>
+            <td height="65px"></td>
+          </tr>
+          <tr>
+            <td height="65px"></td>
+          </tr>
+          <tr>
+            <td height="65px"></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
 </div>
 
-<div id="mainMenuArticleSection">
-  <div id="mainMenuArticleContainer1">
-    <table>
+<div id="mainMenuTopReviews">
+  <div>
+    <table id="mainMenuTableTopReviews">
       <tr>
-        <td>OP</td>
+        <th colspan="3" id="topRatingsTitle">
+          Top Ratings
+        </th>
+      </tr>
+      <tr>
+        <th colspan="3">
+          <%= image_tag("Halo5", :id => "topOneReviewImage") %>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="2">
+          1.- Halo 5
+        </th>
+        <th>
+          10
+        </th>
+      </tr>
+    </table>
+    <table class="mainMenuTableTopReviews" style="margin-top:0px">
+      <tr>
+        <td class="topReviewImageContainer">
+          <%= image_tag("Halo5", :class => "topReviewImage") %>
+        </td>
+        <td class="topReviewTitle">
+          2.- Halo 5
+        </td>
+        <td class="topReviewRating">
+          10
+        </td>
+      </tr>
+      <tr>
+        <td class="topReviewImageContainer">
+          <%= image_tag("Halo5", :class => "topReviewImage") %>
+        </td>
+        <td class="topReviewTitle">
+          3.- Halo 5
+        </td>
+        <td class="topReviewRating">
+          10
+        </td>
+      </tr>
+      <tr>
+        <td class="topReviewImageContainer">
+          <%= image_tag("Halo5", :class => "topReviewImage") %>
+        </td>
+        <td class="topReviewTitle">
+          4.- Halo 5
+        </td>
+        <td class="topReviewRating">
+          10
+        </td>
+      </tr>
+      <tr>
+        <td class="topReviewImageContainer">
+          <%= image_tag("Halo5", :class => "topReviewImage") %>
+        </td>
+        <td class="topReviewTitle">
+          5.- Halo 5
+        </td>
+        <td class="topReviewRating">
+          10
+        </td>
+      </tr>
+      <tr>
+        <td class="topReviewImageContainer">
+          <%= image_tag("Halo5", :class => "topReviewImage") %>
+        </td>
+        <td class="topReviewTitle">
+          6.- Halo 5
+        </td>
+        <td class="topReviewRating">
+          10
+        </td>
+      </tr>
+      <tr>
+        <td class="topReviewImageContainer">
+          <%= image_tag("Halo5", :class => "topReviewImage") %>
+        </td>
+        <td class="topReviewTitle">
+          7.- Halo 5
+        </td>
+        <td class="topReviewRating">
+          10
+        </td>
+      </tr>
+      <tr>
+        <td class="topReviewImageContainer">
+          <%= image_tag("Halo5", :class => "topReviewImage") %>
+        </td>
+        <td class="topReviewTitle">
+          8.- Halo 5
+        </td>
+        <td class="topReviewRating">
+          10
+        </td>
+      </tr>
+      <tr>
+        <td class="topReviewImageContainer">
+          <%= image_tag("Halo5", :class => "topReviewImage") %>
+        </td>
+        <td class="topReviewTitle">
+          9.- Halo 5
+        </td>
+        <td class="topReviewRating">
+          10
+        </td>
+      </tr>
+      <tr>
+        <td class="topReviewImageContainer">
+          <%= image_tag("Halo5", :class => "topReviewImage") %>
+        </td>
+        <td class="topReviewTitle">
+          10.- Halo 5
+        </td>
+        <td class="topReviewRating">
+          10
+        </td>
       </tr>
     </table>
   </div>
-
-  <div id="mainMenuArticleContainer2">
-    <table>
-      <tr>
-        <td>OP</td>
-      </tr>
-    </table>
-  </div>
 </div>
+
+<div class="floatClearer"></div>
