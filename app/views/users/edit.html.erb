@@ -17,10 +17,10 @@
     <p> Email:</br> <%= f.text_field :email%> </p>
     <p> Password:</br> <%= f.password_field :password%></p>
     <p> Password Confirmation:</br> <%= f.password_field :password_confirmation%></p>
-    <div class="field">
-      <%= f.check_box :tech_preference, :style => "display:inline; visibility:visible;"%> Tech News<br />
-      <%= f.check_box :gadget_preference, :style => "display:inline; visibility:visible;"%> Gadgets<br />
-      <%= f.check_box :gaming_preference, :style => "display:inline; visibility:visible;"%> Gaming<br />
+    <div class="accountInformationCheckbox">
+      <%= f.check_box :tech_preference %> Tech News<br />
+      <%= f.check_box :gadget_preference %> Gadgets<br />
+      <%= f.check_box :gaming_preference %> Gaming<br />
     </div>
  
   <p>

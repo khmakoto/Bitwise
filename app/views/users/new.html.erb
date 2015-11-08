@@ -1,13 +1,14 @@
 <% @page_title = "UserAuth | Signup" %>
-<div class="Sign_Form">
+<div class="signUpForm">
   <h1>Sign Up</h1>
   <%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
-    <p> Name:</br> <%= f.text_field :username%> </p>
-    <p> Email:</br> <%= f.text_field :email%> </p>
-    <p> Password:</br> <%= f.password_field :password%></p>
-    <p> Password Confirmation:</br> <%= f.password_field :password_confirmation%></p>
-    <p>Editor <%= f.check_box :editor, :style => "display:inline; visibility:visible;"%></p>
-    <%= f.submit :Signup %>
+    <p class="signField"> Name:</br> <%= f.text_field :username%> </p>
+    <p class="signField"> Email:</br> <%= f.text_field :email%> </p>
+    <p class="signField"> Password:</br> <%= f.password_field :password%></p>
+    <p class="signField"> Password Confirmation:</br> <%= f.password_field :password_confirmation%></p>
+    <p class="accountInformationCheckbox"> Editor <%= f.check_box :editor %></p>
+    <%= f.submit :Signup, :class => "signButton" %>
+    <p id="signUpMessage">Already have an account? Sign up <%= link_to "here", login_url %></p>
   <% end %>
   <% if @user.errors.any? %>
     <ul class="Signup_Errors">
@@ -17,3 +18,5 @@
     </ul>
   <% end %>
 </div>
+
+<div class="floatClearer"></div>
