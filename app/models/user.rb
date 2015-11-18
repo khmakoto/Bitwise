@@ -8,6 +8,11 @@ class User < ActiveRecord::Base
   validates :password, :confirmation => true #password_confirmation attr
   validates_length_of :password, :in => 6..20, :on => :create
 
+  has_many :comments
+  has_many :publications
+  has_many :reading_lists
+  has_many :reading_publications, class_name: 'Publication', through: :reading_lists
+
 
   def encrypt_password
     if password.present?

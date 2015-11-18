@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :publications
+  resources :comments
   get "login" => "sessions#login", :as => "login"
   get "logout" => "sessions#logout", :as => "logout"
   post "attempt" => "sessions#login_attempt"

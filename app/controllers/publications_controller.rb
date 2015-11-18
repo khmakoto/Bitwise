@@ -1,17 +1,19 @@
 class PublicationsController < ApplicationController
-  before_filter :authenticate_user, :only => [:new, :create]
+  before_filter :authenticate_user
 
   def index
     type = params[:type]
-    section = params[:section]
-    @publications = Publication.where(type: type)
+    @section = params[:section]
+    @publications = Publication.where(publication_type: type)
     if type == "article"
-      @publications = @publications.where(section: section)
+      @publications = @publications.where(section: @section)
+    else
+      @section = "Reviews"
     end
   end
 
   def new
-    if !@current_user
+    if !@current_user || !@current_user.editor?
       redirect_to root_path
     end
     @publication = Publication.new
@@ -36,9 +38,13 @@ class PublicationsController < ApplicationController
     end
     redirect_to root_path
   end
+
+  def show
+    @publication = Publication.find(params[:id])
+  end
   private
     def publication_params
-      params.require(:publication).permit(:title, :publication_type, :section, :intro, :content, :summary, :grade)
+      params.require(:publication).permit(:title, :publication_type, :section, :intro, :content, :summary, :grade, :img_string)
     end
 
 end

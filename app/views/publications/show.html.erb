@@ -1,0 +1,27 @@
+Yooo just in case, this view and be edited in views/publications/show.html.erb
+
+Title: <%= @publication.title%> <br>
+Introduction: <%= @publication.intro%> <br>
+Image: <%= image_tag @publication.img_string %> <br>
+Content: <%= @publication.content%> <br>
+<%if @publication.publication_type == "review"%>
+  Summary: <%= @publication.summary%> <br>
+  Grade: <%= @publication.grade.to_s%> <br>
+<%end%>
+
+<br>
+COMMENTS <br>
+
+<%@publication.comments.each do |c|%>
+  Name: <%=c.user.username%> <br>
+  Email: <%=c.user.email%><br>
+  Comment: <%=c.text%> <br><br>
+<%end%>
+<%if @current_user%>
+  <%= form_for(:comment, :url => {:controller => 'comments', :action => 'create'}) do |f| %>
+    <p class="signField"> New comment:</br> <%= f.text_area :text%> </p>
+    <%=f.hidden_field :user_id, :value => @current_user.id%>
+    <%=f.hidden_field :publication_id, :value => @publication.id%>
+    <%= submit_tag("Post Comment", :class => "signButton")  %>
+  <%end%>
+<%end%>

@@ -4,9 +4,14 @@
   <%= form_for(:publication, :url => {:controller => 'publications', :action => 'create'}) do |f| %>
     <p class="signField"> Title:</br> <%= f.text_field :title%> </p>
     <%=f.hidden_field :publication_type, :value => @type%>
-    <p class="signField"> Section:</br> <%= f.text_field :section%> </p>
+    <p class="signField"> Section:</br> 
+      <%= f.radio_button :section, 'Tech News'%> Tech News <br>
+      <%= f.radio_button :section, 'Gadgets'%> Gadgets <br>
+      <%= f.radio_button :section, 'Gaming'%> Gaming
+    </p>
     <p class="signField"> Intro:</br> <%= f.text_area :intro%> </p>
     <p class="signField"> Content:</br> <%= f.text_area :content%> </p>
+    <p class="signField"> Image Url:</br> <%= f.text_field :img_string%> </p>
     <%= submit_tag("Create Article", :class => "signButton")  %>
   <% end %>
   <% if @publication.errors.any? %>

@@ -1,4 +1,4 @@
-<div id="leftHomePage">
+<div id="leftHomePage"> 
   <div id="sliderContainer">
     <ul class="slider">
       <li>
@@ -42,38 +42,16 @@
         <tr>
           <th colspan="2">Latest stories</th>
         </tr>
-        <tr>
-          <td class="articleSectionImageCell">
-            <%= image_tag("Halo5", :class => "articleImage") %>
-          </td>
-          <td class="articleSectionTitleCell">
-            <p>Halo 5</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="articleSectionImageCell">
-            <%= image_tag("MGSV", :class => "articleImage") %>
-          </td>
-          <td class="articleSectionTitleCell">
-            <p>Metal Gear Solid V</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="articleSectionImageCell">
-            <%= image_tag("SWBattlefront", :class => "articleImage") %>
-          </td>
-          <td class="articleSectionTitleCell">
-            <p>Star Wars Battlefront</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="articleSectionImageCell">
-            <%= image_tag("Fallout4", :class => "articleImage") %>
-          </td>
-          <td class="articleSectionTitleCell">
-            <p>Fallout 4</p>
-          </td>
-        </tr>
+        <%@latest_publications.each do |p|%>
+          <tr>
+            <td class="articleSectionImageCell">
+              <%= image_tag(p.img_string, :class => "articleImage") %>
+            </td>
+            <td class="articleSectionTitleCell">
+              <p><%=link_to p.title, publication_path(p)%></p>
+            </td>
+          </tr>
+        <%end%>
       </table>
     </div>
 
@@ -83,38 +61,16 @@
           <th colspan="2">Featured for you</th>
         </tr>
         <% if @current_user %>
-          <tr>
-            <td class="articleSectionImageCell">
-              <%= image_tag("Halo5", :class => "articleImage") %>
-            </td>
-            <td class="articleSectionTitleCell">
-              <p>Halo 5</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="articleSectionImageCell">
-              <%= image_tag("MGSV", :class => "articleImage") %>
-            </td>
-            <td class="articleSectionTitleCell">
-              <p>Metal Gear Solid V</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="articleSectionImageCell">
-              <%= image_tag("SWBattlefront", :class => "articleImage") %>
-            </td>
-            <td class="articleSectionTitleCell">
-              <p>Star Wars Battlefront</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="articleSectionImageCell">
-              <%= image_tag("Fallout4", :class => "articleImage") %>
-            </td>
-            <td class="articleSectionTitleCell">
-              <p>Fallout 4</p>
-            </td>
-          </tr>
+          <%@featured_publications.each do |p|%>
+            <tr>
+              <td class="articleSectionImageCell">
+                <%= image_tag(p.img_string, :class => "articleImage") %>
+              </td>
+              <td class="articleSectionTitleCell">
+                <p><%=link_to p.title, publication_path(p)%></p>
+              </td>
+            </tr>
+          <%end%>
         <% else %>
           <tr>
             <td height="62px"></td>
@@ -154,118 +110,32 @@
       </tr>
       <tr>
         <th colspan="3">
-          <%= image_tag("Halo5", :id => "topOneReviewImage") %>
+          <%= image_tag(@first_review.img_string, :id => "topOneReviewImage") %>
         </th>
       </tr>
       <tr>
         <th colspan="2">
-          1.- Halo 5
+          1.- <%=link_to @first_review.title, publication_path(@first_review)%>
         </th>
         <th>
-          10
+          <%=@first_review.grade.to_s%>
         </th>
       </tr>
     </table>
     <table class="mainMenuTableTopReviews" style="margin-top:0px">
-      <tr>
-        <td class="topReviewImageContainer">
-          <%= image_tag("Halo5", :class => "topReviewImage") %>
-        </td>
-        <td class="topReviewTitle">
-          2.- Halo 5
-        </td>
-        <td class="topReviewRating">
-          10
-        </td>
-      </tr>
-      <tr>
-        <td class="topReviewImageContainer">
-          <%= image_tag("Halo5", :class => "topReviewImage") %>
-        </td>
-        <td class="topReviewTitle">
-          3.- Halo 5
-        </td>
-        <td class="topReviewRating">
-          10
-        </td>
-      </tr>
-      <tr>
-        <td class="topReviewImageContainer">
-          <%= image_tag("Halo5", :class => "topReviewImage") %>
-        </td>
-        <td class="topReviewTitle">
-          4.- Halo 5
-        </td>
-        <td class="topReviewRating">
-          10
-        </td>
-      </tr>
-      <tr>
-        <td class="topReviewImageContainer">
-          <%= image_tag("Halo5", :class => "topReviewImage") %>
-        </td>
-        <td class="topReviewTitle">
-          5.- Halo 5
-        </td>
-        <td class="topReviewRating">
-          10
-        </td>
-      </tr>
-      <tr>
-        <td class="topReviewImageContainer">
-          <%= image_tag("Halo5", :class => "topReviewImage") %>
-        </td>
-        <td class="topReviewTitle">
-          6.- Halo 5
-        </td>
-        <td class="topReviewRating">
-          10
-        </td>
-      </tr>
-      <tr>
-        <td class="topReviewImageContainer">
-          <%= image_tag("Halo5", :class => "topReviewImage") %>
-        </td>
-        <td class="topReviewTitle">
-          7.- Halo 5
-        </td>
-        <td class="topReviewRating">
-          10
-        </td>
-      </tr>
-      <tr>
-        <td class="topReviewImageContainer">
-          <%= image_tag("Halo5", :class => "topReviewImage") %>
-        </td>
-        <td class="topReviewTitle">
-          8.- Halo 5
-        </td>
-        <td class="topReviewRating">
-          10
-        </td>
-      </tr>
-      <tr>
-        <td class="topReviewImageContainer">
-          <%= image_tag("Halo5", :class => "topReviewImage") %>
-        </td>
-        <td class="topReviewTitle">
-          9.- Halo 5
-        </td>
-        <td class="topReviewRating">
-          10
-        </td>
-      </tr>
-      <tr>
-        <td class="topReviewImageContainer">
-          <%= image_tag("Halo5", :class => "topReviewImage") %>
-        </td>
-        <td class="topReviewTitle">
-          10.- Halo 5
-        </td>
-        <td class="topReviewRating">
-          10
-        </td>
-      </tr>
+      <%@top_reviews.each do |p|%>
+        <tr>
+          <td class="topReviewImageContainer">
+            <%= image_tag(p.img_string, :class => "topReviewImage") %>
+          </td>
+          <td class="topReviewTitle">
+            <%=@place += 1%>.- <%=link_to p.title, publication_path(p)%>
+          </td>
+          <td class="topReviewRating">
+            <%=p.grade.to_s%>
+          </td>
+        </tr>
+      <%end%>
     </table>
   </div>
 </div>

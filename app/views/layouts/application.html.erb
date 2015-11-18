@@ -21,13 +21,13 @@
                 <%=  link_to(root_path) do %>
                     <li class="menuSelected">Home</li>
                 <% end %>
-                <%= link_to(publications_path(:type => "article", :section => "tech")) do%>
+                <%= link_to(publications_path(:type => "article", :section => "Tech News")) do%>
                     <li>Tech news</li>
                 <% end %>
-                <%= link_to(publications_path(:type => "article", :section => "gadget")) do%>
+                <%= link_to(publications_path(:type => "article", :section => "Gadgets")) do%>
                     <li>Gadgets</li>
                 <% end %>
-                <%= link_to(publications_path(:type => "article", :section => "gaming")) do%>
+                <%= link_to(publications_path(:type => "article", :section => "Gaming")) do%>
                     <li>Gaming</li>
                 <% end %>
                 <%= link_to(publications_path(:type => "review", :section => "-")) do%>
