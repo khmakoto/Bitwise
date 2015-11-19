@@ -62,7 +62,10 @@
             <% end %>
         </div>
         <%= image_tag("Search Button", :id => "searchButton") %>
-        <input type="text" placeholder="Search" id="searchBar" />
+        <%= form_tag(publications_path, :method => "get", id: "search-form") do %>
+            <%= text_field_tag :search, params[:search], placeholder: "Search", id: "searchBar" %>
+        <% end %>
+
     </div>
     <% if flash[:success] -%>
         <div class="flashSuccess">

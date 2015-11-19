@@ -13,5 +13,9 @@ class Publication < ActiveRecord::Base
   has_many :comments
   has_many :reading_lists
   has_many :reading_users, through: :reading_lists, source: :user
+
+  def self.search(search)
+    where("title LIKE ? OR publication_type LIKE ? OR section LIKE ? OR intro LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%") 
+  end
  
 end

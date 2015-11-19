@@ -2,13 +2,18 @@ class PublicationsController < ApplicationController
   before_filter :authenticate_user
 
   def index
-    type = params[:type]
-    @section = params[:section]
-    @publications = Publication.where(publication_type: type)
-    if type == "article"
-      @publications = @publications.where(section: @section)
+    if params[:search]
+      @publications = Publication.search(params[:search]).order("created_at DESC")
+      @section = "Displaying Results"
     else
-      @section = "Reviews"
+      type = params[:type]
+      @section = params[:section]
+      @publications = Publication.where(publication_type: type)
+      if type == "article"
+        @publications = @publications.where(section: @section)
+      else
+        @section = "Reviews"
+      end
     end
   end
 
