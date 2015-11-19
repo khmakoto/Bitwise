@@ -52,7 +52,7 @@
                 <%end%>
                 <ul id="accountSubmenu">
                     <li><%= link_to "My account", edit_user_path(@current_user) %></li>
-                    <li>Reading list</li>
+                    <li><%= link_to "Reading List", reading_list_path%></li></li>
                     <li><%= link_to "Sign out", logout_url %></li>
                 </ul>        
             <% else %>

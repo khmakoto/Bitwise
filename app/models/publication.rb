@@ -12,6 +12,6 @@ class Publication < ActiveRecord::Base
   belongs_to :user
   has_many :comments
   has_many :reading_lists
-  has_many :reading_users, class_name: 'User', through: :reading_lists
+  has_many :reading_users, through: :reading_lists, source: :user
  
 end

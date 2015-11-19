@@ -1,5 +1,7 @@
 Yooo just in case, this view and be edited in views/publications/show.html.erb
-
+<br>
+<br>
+<br>
 Title: <%= @publication.title%> <br>
 Introduction: <%= @publication.intro%> <br>
 Image: <%= image_tag @publication.img_string %> <br>
@@ -9,6 +11,14 @@ Content: <%= @publication.content%> <br>
   Grade: <%= @publication.grade.to_s%> <br>
 <%end%>
 
+<br>
+<%if @current_user%>
+  <%if @favorite%>
+    <p ><%=link_to "Remove from ReadingList", remove_from_list_path(publication_id: @publication.id)%>
+  <%else%>
+    <%=link_to "Add to ReadingList", add_to_list_path(publication_id: @publication.id)%>
+  <%end%>
+<%end%>
 <br>
 COMMENTS <br>
 

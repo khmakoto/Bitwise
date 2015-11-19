@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   has_many :comments
   has_many :publications
   has_many :reading_lists
-  has_many :reading_publications, class_name: 'Publication', through: :reading_lists
+  has_many :reading_publications, through: :reading_lists, source: :publication
 
 
   def encrypt_password

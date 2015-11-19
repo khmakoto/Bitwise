@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get "login" => "sessions#login", :as => "login"
   get "logout" => "sessions#logout", :as => "logout"
   post "attempt" => "sessions#login_attempt"
+  get "publications/add/:publication_id", to: "publications#add", as: "add_to_list"
+  get "publications/remove/:publication_id", to: "publications#remove", as: "remove_from_list"
+  get "readinglist", to: "publications#reading_list", as: "reading_list"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
