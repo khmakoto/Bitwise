@@ -97,10 +97,14 @@
         <table id="footer">
             <tr>
                 <th>
-                    <%= link_to "Contact Us", contact_path%>
+                    <%= link_to contact_path, class: "footerContent" do %>
+                        Contact Us
+                    <% end %>
                 </th>
                 <th>
-                    <%= link_to "About Us", about_path%>
+                    <%= link_to about_path, class: "footerContent" do %>
+                        About Us
+                    <% end %>
                 </th>
             </tr>
         </table>

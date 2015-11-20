@@ -48,7 +48,7 @@
               <%= image_tag(p.img_string, :class => "articleImage") %>
             </td>
             <td class="articleSectionTitleCell">
-              <p><%=link_to p.title, publication_path(p)%></p>
+              <p><%=link_to p.title, publication_path(p), class: "linkStyle2"%></p>
             </td>
           </tr>
         <%end%>
@@ -67,7 +67,7 @@
                 <%= image_tag(p.img_string, :class => "articleImage") %>
               </td>
               <td class="articleSectionTitleCell">
-                <p><%=link_to p.title, publication_path(p)%></p>
+                <p><%=link_to p.title, publication_path(p), class: "linkStyle2" %></p>
               </td>
             </tr>
           <%end%>
@@ -116,7 +116,7 @@
         </tr>
         <tr>
           <th colspan="2">
-            1.- <%=link_to @first_review.title, publication_path(@first_review)%>
+            1.- <%=link_to @first_review.title, publication_path(@first_review), class: "linkStyle1" %>
           </th>
           <th>
             <%=@first_review.grade.to_s%>
@@ -131,7 +131,7 @@
             <%= image_tag(p.img_string, :class => "topReviewImage") %>
           </td>
           <td class="topReviewTitle">
-            <%=@place += 1%>.- <%=link_to p.title, publication_path(p)%>
+            <%=@place += 1%>.- <%=link_to p.title, publication_path(p), class: "linkStyle2" %>
           </td>
           <td class="topReviewRating">
             <%=p.grade.to_s%>

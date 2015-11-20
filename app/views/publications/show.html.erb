@@ -4,17 +4,17 @@
     <td style="width:80%">
       <div id="articleInnerContainer" class="articleOuterContainer">
         <table class="article">
-          <tr>
-            <td class="addRemoveReadingList">
-              <%if @current_user%>
+          <%if @current_user%>
+            <tr>
+              <td class="addRemoveReadingList">
                 <%if @favorite%>
                   <%=link_to "Remove from Reading List", remove_from_list_path(publication_id: @publication.id)%>
                 <%else%>
                   <%=link_to "Add to Reading List", add_to_list_path(publication_id: @publication.id)%>
                 <%end%>
-              <%end%>
-            </td>
-          </tr>
+              </td>
+            </tr>
+          <%end%>
           <tr>
             <th>
               <%= @publication.title%>
