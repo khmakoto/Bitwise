@@ -36,6 +36,7 @@ class PublicationsController < ApplicationController
     end
     @publication = Publication.new(publication_params)
     @publication.user = @current_user
+    @publication.publication_type = $type
     if @publication.save
       redirect_to root_path
     else
