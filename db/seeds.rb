@@ -81,5 +81,53 @@ Publication.create({
   user_id: 1
 })
 
+Publication.create({
+  title: 'Microsoft Surface Book review',
+  publication_type: 'review',
+  intro: "The laptop, evolved",
+  content: "I’ve always wanted Microsoft to build a laptop. Some days I’ll be seated on my couch, other days I’ll be seated on the floor of a convention center or press event, so I need a laptop that just works and won’t annoy me when I’m in the middle of writing an article. The Surface line (from the RT right through to the Surface Pro 3) has always been a compromised mixture of tablet and laptop. They’ve never really worked well in my lap, the trackpad and keyboards weren’t as good as a laptop, and battery life hasn’t been ideal for a portable machine. I could use them fine at home on my desk, but every time I took them on the road with me I just ended up irritated because they weren’t real laptops. Microsoft now thinks it has an answer, and it’s calling it the Surface Book. Microsoft claims it’s the “ultimate laptop” that’s designed to go head-to-head with Apple’s MacBook Pro and premium Windows laptops. While the Surface Book is primarily a laptop, it’s also a tablet thanks to a display that detaches into something like a digital clipboard. Starting at $1,499, the Surface Book is clearly priced at the high-end of the laptop market, and the 1TB of storage model tops out at $3,199. That’s a lot of money to spend on a computer. I want a Surface that works like a laptop, has a great trackpad and keyboard, and actually lasts me a working day. So, is the Surface Book a really great laptop or just another mix?",
+  section: 'Gadgets',
+  img_string: 'https://cdn2.vox-cdn.com/thumbor/kLs6_J8mozEcX7lypgXv5mVdeHQ=/1020x0/cdn0.vox-cdn.com/uploads/chorus_asset/file/4130882/microsoft-surface-book-3.0.jpg',
+  summary: "Microsoft can clearly make a laptop that competes with the MacBook Pro with all the best ingredients, but it just needs to find a better recipe to combine all its innovative hardware. The Surface Book is seriously impressive, and as a hybrid it’s probably the best out there. If Microsoft had just made a laptop, I suspect I'd be calling it the best Windows laptop out there, but it didn't. While it's great Microsoft is pushing the idea of a tablet and a laptop hybrid constantly, I'm still hunting for the perfect mix of hardware that really shows this is the future.",
+  grade: 8.3,
+  user_id: 1
+})
+
+Publication.create({
+  title: 'Rise of the Tomb Raider review',
+  publication_type: 'review',
+  intro: "Rise of the Tomb Raider is the most fun I’ve had with a Lara Croft game since 1996. Its story is full of the right kind of danger and intrigue, its tombs are dastardly, and I was as struck by its huge, romantic environments as I was as a kid playing the original. Although I could have done with a few more puzzles and fewer firefights overall, I enjoyed every rollicking, big-hearted second of it.",
+  content: "Like its predecessor, Rise of the Tomb Raider revels in an ever-so-slightly-sci-fi and ultimately very fun high-concept involving a hunt for an artifact that grants eternal life. It’s broad, Indiana Jones stuff that gallops along at a great clip through gloriously over-the-top sequences grounded with a strong emotional throughline. Rise of the Tomb Raider is, at its core, about Lara and her late father, and actress Camilla Luddington’s thoughtful performance as Lara sells us on the complicated relationship she has with the ghosts he left behind. Minute-to-minute, Lara shines. She’s confident and smart, and reacts to danger with an action hero’s calmness and intuition. Yet she’s scarred by her last adventure, so she carries a sort of charismatic weariness that tinges her quips with self-deprecation. As a character, Lara Croft has never been so endearing. Her ambitions are more complex, too. This time round she’s driven by obsession, not survival, and for the first time we see her in shades of grey. Unlike 2013’s Tomb Raider, I wasn’t wincing at her constant broken bones - she’s now a formidable fighter who inflicts more than she takes - but I did see the cracks in her moral compass.",
+  section: 'Gaming',
+  img_string: 'http://blog.lesoir.be/moi-jeux/wp-content/uploads/sites/2/2015/11/Rise_of_the_tomb_raider.jpg',
+  summary: "Rise of the Tomb Raider raises the bar set by Lara’s last outing with a rollicking adventure story, strong villains, gorgeous vistas, and smart puzzles – go off the main path to find the best stuff in dastardly optional tombs. Though the mandatory combat doesn’t distinguish itself with challenging enemies unless you crank up the difficulty, Lara’s newfound versatility on the battlefield makes fighting a lot more fun. Once again it’s Lara herself, however, who steals the show, her complex ambitions and hardened resolve showing new sides to a character who has well and truly grown from survivor to the most fascinating action hero in video games today.",
+  grade: 9.3,
+  user_id: 1
+})
+
+Publication.create({
+  title: 'Fallout 4 review',
+  publication_type: 'review',
+  intro: "We’re giving this post-nuclear RPG a glowing endorsement. ",
+  content: "Most of the way this huge roleplaying-shooter game works is carried over from its excellent predecessors, Fallout 3 and Fallout: New Vegas. It is the Skyrim to Fallout 3’s Oblivion, if you will – it iterates on the previous game’s already amazing systems, and it’s similarly dense with locations to explore, genuinely creepy monsters to fight, and superbly engrossing post-nuclear atmosphere that blends unsettling gore and death with dark comedy. After more than 55 hours played I may have seen an ending, yet I feel like I’ve only begun to explore its extraordinary world; from the look of it, I’ll easily be able to spend another 100 happy hours here and still see new and exciting things. A story that begins as a basic search for your lost family evolves into something much more complex and morally nuanced. Like in Fallout: New Vegas, we’re drawn into a struggle between several groups competing for control of the region, and deciding which of their imperfect post-apocalyptic philosophies to align with made me pause to consider how I wanted events to play out. Even the highly questionable Institute has a tempting reason to side with them, and turning away from them in my playthrough wasn’t as clear-cut a choice as I’d expected. I was impressed by the sympathy shown toward the villains, too - even the most irredeemable murderer is explored and given a trace of humanity.",
+  section: 'Gaming',
+  img_string: 'https://i.ytimg.com/vi/7y3hckT7OVk/maxresdefault.jpg',
+  summary: "The world, exploration, crafting, atmosphere, and story of Fallout 4 are all key parts of this hugely successful sandbox role-playing game. Great new reasons to obsessively gather and hoard relics of happier times, strong companions, and sympathetic villains driving tough decisions make it an adventure I’ll definitely replay and revisit. Even the technical shakiness that crops up here and there can’t even begin to slow down its momentum.",
+  grade: 9.5,
+  user_id: 1
+})
+
+Publication.create({
+  title: 'Nexus 6 review',
+  publication_type: 'review',
+  intro: "Go bigger or go home.",
+  content: "Phablet. It's the worst word, a word only spoken with an apology — or maybe with a proviso. I hate saying this word, but it's the only way to describe this thing. But it's just a word. And like all good words, it accurately connotes the thing you want to reference. It's more economical than gigantic phone and, honestly, more accurate. A phablet is not a phone; it's something else. In fact, there's a certain satisfaction in using it. When a word not only refers to a thing but also itself feels just as unwieldy as that thing, that is a good word. A powerful word, a word that gets things done and isn't worried about how silly it looks doing it. The Nexus 6 is a phablet. It's also the showcase for the newest version of Android, 5.0 Lollipop. As with other Nexus devices, it will likely be one of the only phones to run Android without extra, unwanted software you get from carriers and manufacturers. That's a big deal for some people. Assuming you aren't put off by the size or the $649 off-contract pricing. Assuming that you don't really want just a phone. Because the Nexus 6 isn't a phone. It's a phablet.",
+  section: 'Gadgets',
+  img_string: 'http://blogs-images.forbes.com/gordonkelly/files/2014/12/2014-12-04-15.39.46-1940x1493.jpg',
+  summary: "Android Lollipop couldn’t ask for a better showcase than the Nexus 6. I do wish that the software did a better job helping me manage a device this large, but the fundamental improvements to the already excellent notification system have made me more productive already. Assuming Google can work out these first-release bugs, Lollipop itself could be fast enough and pretty enough to spur Android developers to finally pay more attention to design in their apps. Whether the Nexus 6 will be more than a showcase is an open question. Nexus phones always seem to have some sort of weird sales strategy that limits their adoption. The last couple of phones have been incredibly inexpensive, but lacked carrier support. The Nexus 6 flips that script: it has the support of the big carriers in the US, but it’s no longer a cheap phone at $649 off contract. So the story of the Nexus may remain unchanged: popular with enthusiasts, but a curiosity for everybody else. If nothing else, that carrier support means that you can check out the size for yourself in a store. If you do, don’t be shy about really hanging out with the Nexus 6 for as long as possible. Using the Nexus 6 is absolutely awkward until, strangely, it's not. When I show this phablet to people, I get the same glassy-eyed I don’t need this look that I used to get when I showed them my big, honking pre-iPhone smartphone all those years ago. They all converted. You just might do the same.",
+  grade: 8.6,
+  user_id: 1
+})
+
 puts "Seeding complete"
 
