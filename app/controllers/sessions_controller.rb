@@ -53,10 +53,10 @@ class SessionsController < ApplicationController
     @slider_publications = Publication.all.order("created_at DESC").limit(4)
   end
   
-  def profile
+  def contact_us
   end
   
-  def setting
+  def about_us
   end
 
 end
