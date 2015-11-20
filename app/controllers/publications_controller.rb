@@ -22,9 +22,9 @@ class PublicationsController < ApplicationController
       redirect_to root_path
     end
     @publication = Publication.new
-    @type = params[:type]
-    if @type == "article"
-      render "new_article.html.erb"
+    $type = params[:type]
+    if $type == "article"
+      render "new_article.html.erb", :params => { :type => @type }
     else
       render "new_review.html.erb"
     end
@@ -37,11 +37,14 @@ class PublicationsController < ApplicationController
     @publication = Publication.new(publication_params)
     @publication.user = @current_user
     if @publication.save
-      flash[:success] = "Publication created succesfully"
+      redirect_to root_path
     else
-      flash[:error] = "Publication is invalid"
+      if $type == "article"
+        render "new_article.html.erb"
+      else
+        render "new_review.html.erb"
+      end
     end
-    redirect_to root_path
   end
 
   def show

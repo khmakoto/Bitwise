@@ -1,5 +1,4 @@
 <%= form_for @user do |f| %>
- 
   <% if @user.errors.any? %>
     <div class="signUpErrors">
       <h3><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h3>
@@ -23,7 +22,9 @@
         </div>
       </p>
       <p>
-        <p class="signField"><%= submit_tag("Update information", :class => "signButton") %></p>
+        <%= submit_tag("Update information", :class => "signButton") %>
       </p>
-    </div
+    </div>
 <% end %>
+
+<div class="floatClearer"></div>
