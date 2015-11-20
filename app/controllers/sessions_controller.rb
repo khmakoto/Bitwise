@@ -50,6 +50,7 @@ class SessionsController < ApplicationController
     @top_reviews = Publication.all.where(publication_type: "review", updated_at: range).order("grade desc").limit(10).to_a
     @first_review = @top_reviews.shift
     @place = 1
+    @slider_publications = Publication.all.order("created_at DESC").limit(4)
   end
   
   def profile

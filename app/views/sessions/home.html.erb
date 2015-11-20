@@ -5,33 +5,33 @@
         <input type="radio" id="slide0" name="slide" checked />
         <label for="slide0"></label>
         <div class="slideTitle" id="slideTitle0">
-          <p>Halo 5</p>
+          <p><%= @slider_publications.first.title%></p>
         </div>
-        <%= image_tag("Halo5") %>
+        <%= image_tag(@slider_publications.first.img_string) %>
       </li>
       <li>
         <input type="radio" id="slide1" name="slide" />
         <label for="slide1"></label>
         <div class="slideTitle" id="slideTitle1">
-          <p>Metal Gear Solid V</p>
+          <p><%=@slider_publications.second.title%></p>
         </div>
-        <%= image_tag("MGSV") %>
+        <%= image_tag(@slider_publications.second.img_string) %>
       </li>
       <li>
         <input type="radio" id="slide2" name="slide" />
         <label for="slide2"></label>
         <div class="slideTitle" id="slideTitle2">
-          <p>Star Wars Battlefront</p>
+          <p><%=@slider_publications.third.title%></p>
         </div>
-        <%= image_tag("SWBattlefront") %>
+        <%= image_tag(@slider_publications.third.img_string) %>
       </li>
       <li>
         <input type="radio" id="slide3" name="slide" />
         <label for="slide3"></label>
         <div class="slideTitle" id="slideTitle3">
-          <p>Fallout 4</p>
+          <p><%=@slider_publications.fourth.title%></p>
         </div>
-        <%= image_tag("Fallout4") %>
+        <%= image_tag(@slider_publications.fourth.img_string) %>
       </li>
     </ul>
   </div>
