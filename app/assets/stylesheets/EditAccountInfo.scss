@@ -1,7 +1,7 @@
 .accountInformationCheckbox > input[type="checkbox"] {
 	visibility: visible;
 	display: inline;
-	margin: 5px 0px;
+	margin: 10px 0px;
 }
 
 .accountInformationCheckbox {
@@ -49,7 +49,7 @@
 
 .signUpErrors {
 	margin: auto;
-	margin-top: -16px;
+	padding: 10px 0px;
 	width: 100%;
 	background-color: #FF3D42;
 	opacity: 0;
@@ -57,4 +57,25 @@
 	text-align: center;
 	font-style: italic;
 	font-weight: bold;
+}
+
+.introField {
+	width: 600px;
+	height: 150px;
+}
+
+.contentField {
+	width: 600px;
+	height: 300px;
+}
+
+.articleSection {
+	visibility: visible;
+	display: inline;
+	margin: 10px 0px;
+	font-size: 15px;
+}
+
+.articleTextBox {
+	width: 600px;
 }

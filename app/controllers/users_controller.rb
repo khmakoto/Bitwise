@@ -14,7 +14,6 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path
     else
-      flash[:notice] = "Form is invalid"
       flash[:color]= "invalid"
       render "new"
     end
@@ -31,9 +30,12 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     if @user.update(user_params)
+      flash[:success] = "Information updated successfully"
+      flash[:color]= "valid"
       redirect_to root_path
     else
       render 'edit'
+      @user = User.find(params[:id])
     end
   end
 
