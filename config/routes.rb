@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get "publications/add/:publication_id", to: "publications#add", as: "add_to_list"
   get "publications/remove/:publication_id", to: "publications#remove", as: "remove_from_list"
   get "readinglist", to: "publications#reading_list", as: "reading_list"
+  get "contact_us", to: "sessions#contact_us", as: "contact"
+  get "about_us", to: "sessions#about_us", as: "about"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
