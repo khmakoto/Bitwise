@@ -11,7 +11,9 @@
 <div id="wrapper">
     <!-- The container for the Main Menu and Magazine Logo is created. -->
     <div class="headerContainer">
-        <%= image_tag("Bitwise Logo", :id => "logo") %>
+        <%= link_to(root_path) do %>
+            <%= image_tag("Bitwise Logo", :id => "logo") %>
+        <% end %>
 
         <div class="menuContainer">
             <label for="show-menu" class="show-menu">Menu</label>
@@ -19,19 +21,19 @@
 
             <ul id="menu">
                 <%=  link_to(root_path) do %>
-                    <li class="menuSelected">Home</li>
+                    <li id="homeTab">Home</li>
                 <% end %>
                 <%= link_to(publications_path(:type => "article", :section => "Tech News")) do%>
-                    <li>Tech news</li>
+                    <li id="techTab">Tech news</li>
                 <% end %>
                 <%= link_to(publications_path(:type => "article", :section => "Gadgets")) do%>
-                    <li>Gadgets</li>
+                    <li id="gadgetTab">Gadgets</li>
                 <% end %>
                 <%= link_to(publications_path(:type => "article", :section => "Gaming")) do%>
-                    <li>Gaming</li>
+                    <li id="gamingTab">Gaming</li>
                 <% end %>
                 <%= link_to(publications_path(:type => "review", :section => "-")) do%>
-                    <li>Reviews</li>
+                    <li id="reviewTab">Reviews</li>
                 <% end %>
             </ul>
         </div>
