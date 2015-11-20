@@ -1,5 +1,12 @@
 <% @page_title = "UserAuth | Signup" %>
 <div class="signUpForm">
+  <% if @user.errors.any? %>
+    <div class="signUpErrors">
+    <% for message_error in @user.errors.full_messages %>
+      <p>* <%= message_error %></p>
+    <% end %>
+    </div>
+  <% end %>
   <h1>Sign Up</h1>
   <%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
     <p class="signField"> Name:</br> <%= f.text_field :username%> </p>
@@ -9,13 +16,6 @@
     <p class="accountInformationCheckbox"> Editor <%= f.check_box :editor %></p>
     <%= f.submit :Signup, :class => "signButton" %>
     <p id="signUpMessage">Already have an account? Sign in <%= link_to "here", login_url %></p>
-  <% end %>
-  <% if @user.errors.any? %>
-    <ul class="Signup_Errors">
-    <% for message_error in @user.errors.full_messages %>
-      <li>* <%= message_error %></li>
-    <% end %>
-    </ul>
   <% end %>
 </div>
 

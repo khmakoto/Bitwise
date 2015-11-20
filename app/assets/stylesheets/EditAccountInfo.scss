@@ -46,3 +46,15 @@
 	padding: 10px 0px;
 	font-size: 14px;
 }
+
+.signUpErrors {
+	margin: auto;
+	margin-top: -16px;
+	width: 100%;
+	background-color: #FF3D42;
+	opacity: 0;
+	animation: blinker 2s linear 5;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
