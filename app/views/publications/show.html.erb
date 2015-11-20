@@ -1,24 +1,63 @@
-Yooo just in case, this view and be edited in views/publications/show.html.erb
-<br>
-<br>
-<br>
-Title: <%= @publication.title%> <br>
-Introduction: <%= @publication.intro%> <br>
-Image: <%= image_tag @publication.img_string %> <br>
-Content: <%= @publication.content%> <br>
-<%if @publication.publication_type == "review"%>
-  Summary: <%= @publication.summary%> <br>
-  Grade: <%= @publication.grade.to_s%> <br>
-<%end%>
+<table id="majorArticleContainer">
+  <tr>
+    <td style="width:10%"></td>
+    <td style="width:80%">
+      <div id="articleInnerContainer" class="articleOuterContainer">
+        <table class="article">
+          <tr>
+            <td class="addRemoveReadingList">
+              <%if @current_user%>
+                <%if @favorite%>
+                  <%=link_to "Remove from Reading List", remove_from_list_path(publication_id: @publication.id)%>
+                <%else%>
+                  <%=link_to "Add to Reading List", add_to_list_path(publication_id: @publication.id)%>
+                <%end%>
+              <%end%>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <%= @publication.title%>
+            </th>
+          </tr>
+          <tr>
+            <td class="introCell">
+              <p><%= @publication.intro%></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <%= image_tag @publication.img_string, class: "mainArticleImage" %>
+            </td>
+          </tr>
+          <tr>
+            <td class="articleContentCell">
+              <p><%= @publication.content%></p>
+            </td>
+          </tr>
+          <%if @publication.publication_type == "review"%>
+            <tr>
+              <td>
+                <table class="reviewSpecific">
+                  <tr>
+                    <td class="reviewGrade">
+                      <p><%= @publication.grade.to_s%></p>
+                    </td>
+                    <td class="reviewSummary">
+                      <p><%= @publication.summary%></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          <%end%>
+        </table>
+      </div>
+    </td>
+    <td style="width:10%"></td>
+  </tr>
+</table>
 
-<br>
-<%if @current_user%>
-  <%if @favorite%>
-    <p ><%=link_to "Remove from ReadingList", remove_from_list_path(publication_id: @publication.id)%>
-  <%else%>
-    <%=link_to "Add to ReadingList", add_to_list_path(publication_id: @publication.id)%>
-  <%end%>
-<%end%>
 <br>
 COMMENTS <br>
 
