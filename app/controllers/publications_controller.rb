@@ -93,6 +93,14 @@ class PublicationsController < ApplicationController
       @reading_publications = @current_user.reading_publications
     end
   end
+
+  def my_publications
+    if !@current_user || !@current_user.editor
+      redirect_to root_path
+    else
+      @my_publications = @current_user.publications
+    end
+  end
   private
     def publication_params
       params.require(:publication).permit(:title, :publication_type, :section, :intro, :content, :summary, :grade, :img_string)

@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get "readinglist", to: "publications#reading_list", as: "reading_list"
   get "contact_us", to: "sessions#contact_us", as: "contact"
   get "about_us", to: "sessions#about_us", as: "about"
+  get "my_publications", to: "publications#my_publications", as: "my_publications"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
