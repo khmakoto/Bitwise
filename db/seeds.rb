@@ -23,7 +23,7 @@ User.create({
 
 Publication.create({
   title: 'First Article',
-  publication_type: 'Article',
+  publication_type: 'article',
   intro: 'Makoto master race',
   content: 'bla bla',
   section: 'Gaming',
