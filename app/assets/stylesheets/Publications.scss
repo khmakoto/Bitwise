@@ -1,5 +1,5 @@
 #majorArticleContainer {
-    margin-top: 75px;
+    margin: 80px 0px;
     width: 100%;
 }
 
@@ -126,4 +126,14 @@
 
 .addRemoveReadingList {
     background-color: #08B478;
+}
+
+#commentsTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.commentsSection {
+    text-align: center;
 }

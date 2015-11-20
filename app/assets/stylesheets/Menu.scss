@@ -187,7 +187,7 @@ ul#menu > a {
 }
 
 #accountSubmenu {
-    width: 100px;
+    width: 230px;
     padding: 10px 10px;
     margin: -10px;
     position: relative;
@@ -203,8 +203,8 @@ ul#menu > a {
 }
 
 #accountSubmenu li {
-	text-align: center;
-	display: block;
+	margin: 10px;
+	display: inline-block;
 	font-size: 14px;
 	padding: 10px 5px;
 	border-radius: 10px;

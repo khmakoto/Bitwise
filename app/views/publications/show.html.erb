@@ -56,23 +56,31 @@
     </td>
     <td style="width:10%"></td>
   </tr>
+  <tr>
+    <td style="width:10%"></td>
+    <td style="width:80%">
+      <br/><br/><br/>
+      <fieldset>
+        <legend id="commentsTitle">COMMENTS</legend>
+      </fieldset>
+
+      <%if @current_user%>
+        <%= form_for(:comment, :url => {:controller => 'comments', :action => 'create'}) do |f| %>
+          <p class="signField"> New comment:</br> <%= f.text_area :text%> </p>
+          <%=f.hidden_field :user_id, :value => @current_user.id%>
+          <%=f.hidden_field :publication_id, :value => @publication.id%>
+          <%= submit_tag("Post Comment", :class => "signButton")  %>
+        <%end%>
+      <%end%>
+
+      <%@publication.comments.each do |c|%>
+        Name: <%=c.user.username%> <br>
+        Email: <%=c.user.email%><br>
+        Comment: <%=c.text%> <br><br>
+      <%end%>
+    </td>
+    <td style="width:10%"></td>
+  </tr>
 </table>
-
-<br>
-COMMENTS <br>
-
-<%@publication.comments.each do |c|%>
-  Name: <%=c.user.username%> <br>
-  Email: <%=c.user.email%><br>
-  Comment: <%=c.text%> <br><br>
-<%end%>
-<%if @current_user%>
-  <%= form_for(:comment, :url => {:controller => 'comments', :action => 'create'}) do |f| %>
-    <p class="signField"> New comment:</br> <%= f.text_area :text%> </p>
-    <%=f.hidden_field :user_id, :value => @current_user.id%>
-    <%=f.hidden_field :publication_id, :value => @publication.id%>
-    <%= submit_tag("Post Comment", :class => "signButton")  %>
-  <%end%>
-<%end%>
 
 <div class="floatClearer"></div>
