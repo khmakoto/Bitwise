@@ -56,28 +56,37 @@
     </td>
     <td style="width:10%"></td>
   </tr>
+  <tr style="height:25px">
+    <td></td>
+  </tr>
   <tr>
     <td style="width:10%"></td>
-    <td style="width:80%">
+    <td class="commentsSection">
       <br/><br/><br/>
-      <fieldset>
-        <legend id="commentsTitle">COMMENTS</legend>
-      </fieldset>
+      <fieldset id="commentsTitle">
+        <legend>COMMENTS</legend>
 
-      <%if @current_user%>
-        <%= form_for(:comment, :url => {:controller => 'comments', :action => 'create'}) do |f| %>
-          <p class="signField"> New comment:</br> <%= f.text_area :text%> </p>
-          <%=f.hidden_field :user_id, :value => @current_user.id%>
-          <%=f.hidden_field :publication_id, :value => @publication.id%>
-          <%= submit_tag("Post Comment", :class => "signButton")  %>
+        <%if @current_user%>
+          <%= form_for(:comment, :url => {:controller => 'comments', :action => 'create'}) do |f| %>
+            <p class="signField"> New comment:</br> <%= f.text_area :text, class: "commentField" %> </p>
+            <%=f.hidden_field :user_id, :value => @current_user.id%>
+            <%=f.hidden_field :publication_id, :value => @publication.id%>
+            <center><%= submit_tag("Post Comment", :class => "signButton")  %></center>
+          <%end%>
+          <br/>
+          <br/>
         <%end%>
-      <%end%>
 
-      <%@publication.comments.each do |c|%>
-        Name: <%=c.user.username%> <br>
-        Email: <%=c.user.email%><br>
-        Comment: <%=c.text%> <br><br>
-      <%end%>
+        <%@publication.comments.reverse_each do |c|%>
+          <div class="comment">
+            <%= mail_to c.user.email, class: "emailLink" do %>
+              <p class="commentName"><%=c.user.username%> <br></p>
+            <% end %>
+            <p class="commentContent"><%=c.text%> <br></p><br>
+          </div>
+        <%end%>
+      </fieldset>
+      <br/><br/><br/>
     </td>
     <td style="width:10%"></td>
   </tr>

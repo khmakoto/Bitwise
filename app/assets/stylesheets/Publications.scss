@@ -129,11 +129,59 @@
 }
 
 #commentsTitle {
-    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+#commentsTitle > legend {
     font-weight: bold;
     font-size: 25px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    left: 40%;
 }
 
 .commentsSection {
-    text-align: center;
+    width: 80%;
+    background-color: #838588;
+}
+
+.commentField {
+    width: 100%;
+    margin: auto;
+    height: 150px;
+    font-size: 16px;
+}
+
+.comment {
+    background-color: #48535D;
+    margin: 5px 0px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #9FA7AE;
+}
+
+.comment > p {
+    position: relative;
+    top: 50%;
+}
+
+.commentName {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.commentContent {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+.emailLink {
+    color: #9FA7AE;
 }
