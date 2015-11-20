@@ -46,7 +46,8 @@ class SessionsController < ApplicationController
       @featured_publications = @featured_publications.sort_by { |f| -f[:id] }
       @featured_publications = @featured_publications.take(5)
     end
-    @top_reviews = Publication.all.where(publication_type: "review").order("grade desc").limit(10).to_a
+    range = Time.now.beginning_of_month..Time.now.end_of_month
+    @top_reviews = Publication.all.where(publication_type: "review", updated_at: range).order("grade desc").limit(10).to_a
     @first_review = @top_reviews.shift
     @place = 1
   end

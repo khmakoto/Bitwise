@@ -21,25 +21,5 @@ User.create({
   password_confirmation: 'password'
 })
 
-Publication.create({
-  title: 'First Article',
-  publication_type: 'article',
-  intro: 'Makoto master race',
-  content: 'bla bla',
-  section: 'Gaming',
-  user_id: 1
-})
-
-Publication.create({
-  title: 'First Review',
-  publication_type: 'review',
-  intro: 'Makoto master race2',
-  content: 'bla bla',
-  section: '-',
-  summary: 'In conclusion',
-  grade: 5.9,
-  user_id: 1
-})
-
 puts "Seeding complete"
 

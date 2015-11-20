@@ -11,11 +11,13 @@ class UsersController < ApplicationController
     if @user.save
       flash[:notice] = "You signed up successfully"
       flash[:color]= "valid"
+      session[:user_id] = @user.id
+      redirect_to root_path
     else
       flash[:notice] = "Form is invalid"
       flash[:color]= "invalid"
+      render "new"
     end
-    render "new"
   end
 
   def edit

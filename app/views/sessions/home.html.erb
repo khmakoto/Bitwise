@@ -108,19 +108,21 @@
           Top Ratings
         </th>
       </tr>
-      <tr>
-        <th colspan="3">
-          <%= image_tag(@first_review.img_string, :id => "topOneReviewImage") %>
-        </th>
-      </tr>
-      <tr>
-        <th colspan="2">
-          1.- <%=link_to @first_review.title, publication_path(@first_review)%>
-        </th>
-        <th>
-          <%=@first_review.grade.to_s%>
-        </th>
-      </tr>
+      <%if @first_review%>
+        <tr>
+          <th colspan="3">
+            <%= image_tag(@first_review.img_string, :id => "topOneReviewImage") %>
+          </th>
+        </tr>
+        <tr>
+          <th colspan="2">
+            1.- <%=link_to @first_review.title, publication_path(@first_review)%>
+          </th>
+          <th>
+            <%=@first_review.grade.to_s%>
+          </th>
+        </tr>
+      <%end%>
     </table>
     <table class="mainMenuTableTopReviews" style="margin-top:0px">
       <%@top_reviews.each do |p|%>
