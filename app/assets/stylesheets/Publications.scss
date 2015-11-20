@@ -1,0 +1,57 @@
+#articleInnerContainer {
+    text-align: center;
+    width: 100%;
+    float: left;
+    border: 3px solid #BFC2C0;
+}
+
+.articleOuterContainer > table {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 99%;
+    text-align: center;
+    background-color: #727477;
+}
+
+.articleTable td, th {
+    padding: 10px 0px;
+}
+
+.articleTable th {
+    padding: 15px 0px;
+    background-color: #37424C;
+    font-size: 22px;
+    color: #9FA7AE;
+}
+
+.articleTable tr {
+    font-size: 20px;
+    background-color: #727477;
+}
+
+.articleImageShow {
+    height: 130px;
+    width: 130px;
+    margin: auto;
+}
+
+.articleTable td > p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    display: inline;
+    margin-top: -40px;
+}
+
+.articleImageCell {
+    width: 30%;
+}
+
+.articleTitleCell {
+    width: 70%;
+    text-align: left;
+}
+
+.articleDescriptionCell {
+    font-size: 16px;
+}
