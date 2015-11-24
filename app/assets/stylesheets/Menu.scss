@@ -334,3 +334,33 @@ ul#menu > a {
 .footerContent {
     color: #9FA7AE;
 }
+
+#contactUs {
+	margin: 130px 0px;
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+}
+
+#aboutUs {
+	margin: 30px 0px;
+	text-align: center;
+	font-size: 17px;
+	font-style: italic;
+}
+
+#theTeamTable {
+	width: 100%;
+	text-align: center;
+}
+
+#theTeamTable td {
+	width: 50%;
+	border: 5px gray solid;
+	margin: 0px 5px;
+	padding: 0px 5px;
+}
+
+.teamMemberPicture {
+	height: 230px;
+}
